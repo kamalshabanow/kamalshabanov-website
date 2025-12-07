@@ -1,4 +1,3 @@
-// Particle animation
 const particlesContainer = document.getElementById('particles');
 for (let i = 0; i < 20; i++) {
     const particle = document.createElement('div');
@@ -9,7 +8,6 @@ for (let i = 0; i < 20; i++) {
     particlesContainer.appendChild(particle);
 }
 
-// Social link interactions
 document.querySelectorAll('.social-link').forEach(link => {
     link.addEventListener('click', function(e) {
         this.style.transform = 'scale(0.95)';
@@ -19,15 +17,12 @@ document.querySelectorAll('.social-link').forEach(link => {
     });
 });
 
-// Contact button function
 function scrollToContact() {
-    const email = 'your.email@example.com';
-    const subject = 'Salam! Layihə üçün təklif';
-    const body = 'Salam,\n\nSizinlə əlaqə saxlamaq istəyirəm...\n\n';
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const email = 'kamalshabanov04@gmail.com'; 
+    
+    window.location.href = 'mailto:' + email;
 }
 
-// Add hover sound effect (optional)
 document.querySelectorAll('.social-link, .contact-btn').forEach(element => {
     element.addEventListener('mouseenter', function() {
         this.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
