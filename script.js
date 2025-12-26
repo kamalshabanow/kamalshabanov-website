@@ -1,13 +1,3 @@
-const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 20; i++) {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-    particle.style.left = Math.random() * 100 + '%';
-    particle.style.animationDelay = Math.random() * 15 + 's';
-    particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-    particlesContainer.appendChild(particle);
-}
-
 document.querySelectorAll('.social-link').forEach(link => {
     link.addEventListener('click', function(e) {
         this.style.transform = 'scale(0.95)';
